@@ -3,7 +3,7 @@ name: CI/CD Pipeline – Horilla Demo (Django)
 on:
   push:
     branches:
-      - main
+      - 1.0
 
 jobs:
   build-and-analyze:
