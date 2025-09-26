@@ -54,7 +54,8 @@ jobs:
       - name: Push Docker Image
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/horilla_demo:latest
-      - name: SonarQube Analysis 
+          
+      - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@v2 
         with: 
           projectBaseDir: . 
